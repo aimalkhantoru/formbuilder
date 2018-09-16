@@ -2,9 +2,7 @@
   <mat-grid-tile>
     <mat-list>
       <mat-card>
-          <mat-list-item>Input</mat-list-item>
-          <mat-list-item>Checkbox</mat-list-item>
-          <mat-list-item>Text Area</mat-list-item>
+          <mat-list-item *ngFor="let field of inputsFields"> {{field.name}}</mat-list-item>
       </mat-card>
     </mat-list>
   </mat-grid-tile>
